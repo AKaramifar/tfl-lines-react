@@ -28,7 +28,7 @@
   width: 60px;
   border-radius: 50%;
 }
-@keyframes CYF {
+@keyframes TFL {
   0% {
     transform: scale(1);
   }
@@ -54,9 +54,12 @@
   letter-spacing: 3px;
   font-weight: bolder;
 }
-.P_CYF_Style {
+.Div_Rectangle_Style:hover{
+  cursor: pointer;
+}
+.P_TFL_Style {
   color: #113b92;
-  animation: CYF infinite 2s;
+  animation: TFL infinite 2s;
 }
 .P_Title_Style {
   color: whitesmoke;
@@ -95,14 +98,14 @@
   font-size: 17px;
   color: #2ecc71;
   letter-spacing: 3px;
-  animation: CYF infinite 2s;
+  animation: TFL infinite 2s;
 }
 .P_Error_Style{
   font-family: "Concert One", cursive;
   font-size: 17px;
   color: #cc2e2e;
   letter-spacing: 3px;
-  animation: CYF infinite 2s;
+  animation: TFL infinite 2s;
 }
 .Div_Vehicle_Style {
   width: 100%;
