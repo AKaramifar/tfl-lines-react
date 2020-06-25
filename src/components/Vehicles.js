@@ -11,7 +11,7 @@ const Vehicles = ({ selectedMode_Pr, selectVehicle_F }) => {
         return Response.json();
       })
       .then((data) => {
-        console.log(data);
+        console.log(data)
         setVehicles(data);
       })
       .catch((error) => console.log(error));

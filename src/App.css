@@ -76,13 +76,13 @@
 .Div_LeftPanel_Style {
   width: 15%;
   height: 100%;
-  overflow-y: overlay ;  
+  overflow-y: overlay;
   overflow-x: hidden;
-  background-color: #F7FBFE;
+  background-color: #f7fbfe;
 }
 .Div_RightPanel_Style {
   background-color: white;
-  overflow-y: overlay ;  
+  overflow-y: overlay;
   overflow-x: hidden;
   width: 85%;
   height: 100%;
@@ -95,7 +95,7 @@
   height: 50px;
   display: flex;
   align-items: center;
-  background-color: #F7FBFE;
+  background-color: #f7fbfe;
   transition: 150ms;
 }
 .Div_Vehicle_Selected_Style {
@@ -108,7 +108,7 @@
   transition: 150ms;
 }
 
-.Div_Vehicle_Style:hover{
+.Div_Vehicle_Style:hover {
   background-color: #ecf6ff;
   border-left: 5px solid #113b92;
   cursor: pointer;
@@ -121,46 +121,47 @@
   text-indent: 15px;
   letter-spacing: 0.5px;
   color: #2f3640;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
-.Div_ShowSelectMode_Style{
+.Div_ShowSelectMode_Style {
   margin-top: 50px;
 }
-.P_ShowSelectMode_Style, .P_Back_Style{
+.P_ShowSelectMode_Style,
+.P_Back_Style {
   width: calc(85% - 35px);
   padding: 13px;
   text-align: center;
   margin: 0px;
   background-color: #f7f7f7;
   color: #2f3640;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: bolder;
   letter-spacing: 3px;
-  border-left:5px solid #a4b0be ;
-  border-right:5px solid #a4b0be ;
+  border-left: 5px solid #a4b0be;
+  border-right: 5px solid #a4b0be;
   position: fixed;
   z-index: 100;
 }
-.P_Back_Style:hover{
+.P_Back_Style:hover {
   background-color: #e8f1ff;
   cursor: pointer;
 }
-.Div_ModesCardView_Style{
+.Div_ModesCardView_Style {
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
   padding: 15px;
   justify-content: left;
 }
-.Div_VehicleCard_Style{
-  width: 95px;  
+.Div_VehicleCard_Style {
+  width: 95px;
   height: 95px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   margin: 5px;
   border-radius: 3px;
   color: #2f3640;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -168,18 +169,57 @@
   transition: 200ms;
   padding: 10px;
 }
-.Div_VehicleCard_Style:hover{
+.Div_VehicleCard_Style:hover {
   background-color: #ff4757;
   color: whitesmoke;
   cursor: pointer;
   transform: scale(1.05);
 }
-.P_VehicleCard_Style{
+.P_VehicleCard_Style {
   padding: 0px;
   margin: 0px;
 }
-.Div_Route_Style{
+.Div_Route_Style {
   margin-top: 50px;
   min-height: 200px;
   color: #2f3640;
+}
+.Div_Direction_Style {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+.Div_DirectionCard_Style {
+  width: 40%;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 20px;
+  transition: 200ms;
+}
+.Div_DirectionCard_Style:hover{
+  box-shadow: 0px 0px 0px 5px #113b92;
+}
+.Div_ArrowRight_Style{
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  color: #113b92;
+  font-size: 30px;
+  padding: 10px;
+}
+.Div_DirectionSmallCard_Style{
+  width: 48%;
+  border-radius: 5px;
+  background-color: #113b92;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

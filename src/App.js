@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Modes from "./components/Modes.js";
 import Vehicles from "./components/Vehicles.js";
+import Route from "./components/Route.js";
 import "./App.css";
 
 function App() {
@@ -23,9 +24,7 @@ function App() {
     setSelectedMode(mode);
   };
   const selectVehicle = (Vehicle) => {
-    console.log(Vehicle)
     setSelectedVehicle(Vehicle);
-    console.log(selectedVehicle)
   };
   return (
     <div className="Div_App_Style">
@@ -48,6 +47,7 @@ function App() {
               Modes_Pr={modes}
               selectMode_F={selectMode}
               selectedMode_Pr={selectedMode}
+              selectVehicle_F={selectVehicle}
             />
           ) : (
             <p>Loading</p>
@@ -78,7 +78,7 @@ function App() {
             </div>
           ) : (
             <div className="Div_Route_Style">
-              <p>{selectedVehicle}</p>
+              <Route selectedVehicle_Pr={selectedVehicle} />
             </div>
           )}
         </div>

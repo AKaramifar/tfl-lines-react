@@ -1,6 +1,11 @@
 import React from "react";
 
-const Modes = ({ Modes_Pr, selectMode_F, selectedMode_Pr }) => {
+const Modes = ({
+  Modes_Pr,
+  selectMode_F,
+  selectedMode_Pr,
+  selectVehicle_F,
+}) => {
   return (
     <div className="Div_Modes_Style">
       {Modes_Pr.sort((a, b) => a.modeName.localeCompare(b.modeName)).map(
@@ -13,7 +18,10 @@ const Modes = ({ Modes_Pr, selectMode_F, selectedMode_Pr }) => {
                   : "Div_Vehicle_Style"
               }
               key={`vehicle_${index}`}
-              onClick={() => selectMode_F(mode.modeName)}
+              onClick={() => {
+                selectMode_F(mode.modeName);
+                selectVehicle_F(null);
+              }}
             >
               <p className="P_Vehicle_Style">
                 {mode.modeName.charAt(0).toUpperCase() + mode.modeName.slice(1)}
