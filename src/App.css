@@ -126,10 +126,10 @@
 .Div_ShowSelectMode_Style{
   margin-top: 50px;
 }
-.P_ShowSelectMode_Style{
+.P_ShowSelectMode_Style, .P_Back_Style{
   width: calc(85% - 35px);
   padding: 13px;
-  text-align: left;
+  text-align: center;
   margin: 0px;
   background-color: #f7f7f7;
   color: #2f3640;
@@ -141,6 +141,10 @@
   border-right:5px solid #a4b0be ;
   position: fixed;
   z-index: 100;
+}
+.P_Back_Style:hover{
+  background-color: #e8f1ff;
+  cursor: pointer;
 }
 .Div_ModesCardView_Style{
   height: fit-content;
@@ -173,4 +177,9 @@
 .P_VehicleCard_Style{
   padding: 0px;
   margin: 0px;
+}
+.Div_Route_Style{
+  margin-top: 50px;
+  min-height: 200px;
+  color: #2f3640;
 }

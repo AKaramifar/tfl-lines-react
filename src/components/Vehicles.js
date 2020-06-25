@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Vehicles = ({ selectedMode_Pr }) => {
+const Vehicles = ({ selectedMode_Pr, selectVehicle_F }) => {
   const [vehicles, setVehicles] = useState([]);
   useEffect(() => {
     console.log(selectedMode_Pr);
@@ -23,8 +23,8 @@ const Vehicles = ({ selectedMode_Pr }) => {
           .sort((a, b) => a.name.localeCompare(b.name))
           .map((vehicle, index) => {
             return (
-              <div className="Div_VehicleCard_Style">
-                <p className="P_VehicleCard_Style" key={index}>{vehicle.name}</p>
+              <div className="Div_VehicleCard_Style" key={index} onClick={() => selectVehicle_F(vehicle.name)}>
+                <p className="P_VehicleCard_Style" >{vehicle.name}</p>
               </div>
             );
           })
