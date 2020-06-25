@@ -33,7 +33,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.07);
   }
   100% {
     transform: scale(1);
@@ -89,6 +89,20 @@
 }
 .Div_Modes_Style {
   width: 100%;
+}
+.P_Loading_Style{
+  font-family: "Concert One", cursive;
+  font-size: 17px;
+  color: #2ecc71;
+  letter-spacing: 3px;
+  animation: CYF infinite 2s;
+}
+.P_Error_Style{
+  font-family: "Concert One", cursive;
+  font-size: 17px;
+  color: #cc2e2e;
+  letter-spacing: 3px;
+  animation: CYF infinite 2s;
 }
 .Div_Vehicle_Style {
   width: 100%;
@@ -170,7 +184,7 @@
   padding: 10px;
 }
 .Div_VehicleCard_Style:hover {
-  background-color: #ff4757;
+  background-color: #113b92;
   color: whitesmoke;
   cursor: pointer;
   transform: scale(1.05);
@@ -204,6 +218,17 @@
 .Div_DirectionCard_Style:hover{
   box-shadow: 0px 0px 0px 5px #113b92;
 }
+@keyframes arrowRight {
+  0% {
+    color: #113b92;
+  }
+  50% {
+    color: #a7a7a7;
+  }
+  100% {
+    color: #113b92;
+  }
+}
 .Div_ArrowRight_Style{
   display: flex;
   justify-content: center;
@@ -211,6 +236,7 @@
   color: #113b92;
   font-size: 30px;
   padding: 10px;
+  animation: arrowRight infinite 2s;
 }
 .Div_DirectionSmallCard_Style{
   width: 48%;

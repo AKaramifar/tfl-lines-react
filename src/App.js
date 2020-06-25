@@ -5,8 +5,8 @@ import Route from "./components/Route.js";
 import "./App.css";
 
 function App() {
-  const [modes, setModes] = useState([]);
-  const [selectedMode, setSelectedMode] = useState("");
+  const [modes, setModes] = useState(null);
+  const [selectedMode, setSelectedMode] = useState(null);
   const [selectedVehicle, setSelectedVehicle] = useState(null);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ function App() {
       </header>
       <main className="Div_Main_Style">
         <div className="Div_LeftPanel_Style">
-          {modes ? (
+          {modes !== null? (
             <Modes
               Modes_Pr={modes}
               selectMode_F={selectMode}
@@ -50,7 +50,7 @@ function App() {
               selectVehicle_F={selectVehicle}
             />
           ) : (
-            <p>Loading</p>
+            <p className="P_Loading_Style">Loading</p>
           )}
         </div>
         <div className="Div_RightPanel_Style">
@@ -60,20 +60,20 @@ function App() {
             </p>
           ) : (
             <p className="P_ShowSelectMode_Style">
-              {selectedMode !== ""
+              {selectedMode !== null
                 ? selectedMode.charAt(0).toUpperCase() + selectedMode.slice(1)
                 : "Choose a Mode of Transport"}
             </p>
           )}
           {selectedVehicle === null ? (
-            <div className="Div_ShowSelectMode_Style">
-              {selectedMode !== "" ? (
+            <div className="Div_ShowSelectMode_Style">   
+              {selectedMode !== null ? (
                 <Vehicles
                   selectedMode_Pr={selectedMode}
                   selectVehicle_F={selectVehicle}
                 />
               ) : (
-                <p>Loading</p>
+                <p></p>
               )}
             </div>
           ) : (

@@ -7,7 +7,7 @@ const Modes = ({
   selectVehicle_F,
 }) => {
   return (
-    <div className="Div_Modes_Style">
+    <div className="Div_Modes_Style">                  
       {Modes_Pr.sort((a, b) => a.modeName.localeCompare(b.modeName)).map(
         (mode, index) => {
           return (
