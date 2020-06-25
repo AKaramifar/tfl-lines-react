@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   const [modes, setModes] = useState([]);
   const [selectedMode, setSelectedMode] = useState("");
-  const [selectedVehicle, setSelectedVehicle] = useState("");
+  // const [selectedVehicle, setSelectedVehicle] = useState("");
 
   useEffect(() => {
     fetch(`https://cyf-akaramifar-tfl-lines.herokuapp.com/mode`)
@@ -22,9 +22,7 @@ function App() {
   const selectMode = (mode) => {
     setSelectedMode(mode);
   }
-  const selectVehicle = (Vehicle) => {
-    setSelectedVehicle(Vehicle);
-  }
+  
 
   return (
     <div className="Div_App_Style">
@@ -50,7 +48,7 @@ function App() {
           <p className="P_ShowSelectMode_Style">{selectedMode !== "" ? selectedMode.charAt(0).toUpperCase() + selectedMode.slice(1) : "Choose a Mode of Transport"}</p>
           <div className="Div_ShowSelectMode_Style">
           {
-            selectedMode !== "" ? <Vehicles selectedMode_Pr={selectedMode} selectVehicle_F={selectVehicle}/> : <p>Loading</p>
+            selectedMode !== "" ? <Vehicles selectedMode_Pr={selectedMode} /> : <p>Loading</p>
           }
           </div>
           <div></div>
