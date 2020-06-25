@@ -159,6 +159,7 @@
   border-right: 5px solid #a4b0be;
   position: fixed;
   z-index: 100;
+  transition: 200ms;
 }
 .P_Back_Style:hover {
   background-color: #e8f1ff;
