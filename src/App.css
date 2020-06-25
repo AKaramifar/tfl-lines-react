@@ -1,33 +1,32 @@
 .Div_App_Style {
   text-align: center;
   height: 100vh;
-  background-color: #113B92;
 }
-.Div_Header_Style{
- margin: 0px;
- height: 15vh;
- display: flex;
- align-items: center;
+.Div_Header_Style {
+  margin: 0px;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  background-color: #113b92;
 }
-.Div_LogoPart_Style{
+.Div_LogoPart_Style {
   width: 15%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.Div_TilePart_Style{
+.Div_TilePart_Style {
   width: 85%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.Div_Circle_Style{
+.Div_Circle_Style {
   border: 13px solid whitesmoke;
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  /* margin-left: 30px; */
 }
 @keyframes CYF {
   0% {
@@ -40,26 +39,26 @@
     transform: scale(1);
   }
 }
-.Div_Rectangle_Style{
+.Div_Rectangle_Style {
   background-color: whitesmoke;
   width: 100px;
-  height: 25px;
-  margin-left: -20.5px;
-  margin-top: 17px;
+  height: 22px;
+  margin-left: -20px;
+  margin-top: 18px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Concert One", cursive;
-  font-size: 20px;
+  font-size: 17px;
   letter-spacing: 3px;
   font-weight: bolder;
 }
-.P_CYF_Style{
-  color: #113B92;
+.P_CYF_Style {
+  color: #113b92;
   animation: CYF infinite 2s;
 }
-.P_Title_Style{
+.P_Title_Style {
   color: whitesmoke;
   text-indent: 20px;
   letter-spacing: 2px;
@@ -69,22 +68,106 @@
   margin: 0px;
 }
 
-.Div_Main_Style{
+.Div_Main_Style {
   display: flex;
   flex-wrap: wrap;
   height: 85vh;
 }
-.Div_LeftPanel_Style{
-background-color: #F7FBFE;
-width: 15%;
-height: 100%;
+.Div_LeftPanel_Style {
+  width: 15%;
+  height: 100%;
+  overflow-y: overlay ;  
+  overflow-x: hidden;
+  background-color: #F7FBFE;
 }
-
-.Div_RightPanel_Style{
+.Div_RightPanel_Style {
   background-color: white;
   width: 85%;
   height: 100%;
 }
-.Div_Modes_Style{
-  background-color: aqua;
+.Div_Modes_Style {
+  width: 100%;
+}
+.Div_Vehicle_Style {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #F7FBFE;
+  transition: 150ms;
+}
+.Div_Vehicle_Selected_Style {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #ecf6ff;
+  border-left: 5px solid #113b92;
+  transition: 150ms;
+}
+
+.Div_Vehicle_Style:hover{
+  background-color: #ecf6ff;
+  border-left: 5px solid #113b92;
+  cursor: pointer;
+  margin: 0px;
+}
+.P_Vehicle_Style {
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  text-indent: 15px;
+  letter-spacing: 0.5px;
+  color: #2f3640;
+  font-family: 'Oswald', sans-serif;
+}
+.P_ShowSelectMode_Style{
+  padding: 13px;
+  text-align: left;
+  margin: 0px;
+  background-color: #f7f7f7;
+  color: #2f3640;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  border-left:5px solid #a4b0be ;
+  border-right:5px solid #a4b0be ;
+}
+.Div_ModesCardView_Style{
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: left;
+}
+.Div_VehicleCard_Style{
+  width: 95px;  
+  height: 95px;
+  background-color: #F7F7F7;
+  margin: 5px;
+  border-radius: 3px;
+  color: #2f3640;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms;
+  padding: 10px;
+}
+.Div_VehicleCard_Style:hover{
+  background-color: #ff4757;
+  color: whitesmoke;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.P_VehicleCard_Style{
+  padding: 0px;
+  margin: 0px;
+}
+
+.Div_RightPanel_Style{
+  overflow-y: overlay ;  
+  overflow-x: hidden;
 }
