@@ -16,18 +16,21 @@ const Route = ({ selectedVehicle_Pr }) => {
   }, [selectedVehicle_Pr]);
   return routeDirection !== null ? (
     <div className="Div_Direction_Style">
-      {routeDirection.routeSections && routeDirection.routeSections.length > 0 ? (
+      {routeDirection.routeSections &&
+      routeDirection.routeSections.length > 0 ? (
         routeDirection.routeSections.map((direction, index) => {
           return (
             <div className="Div_DirectionCard_Style" key={`Direction_${index}`}>
               <div className="Div_DirectionSmallCard_Style">
-                {direction.originationName}
+                <p className="P_Label_Style">START OF LINE</p>
+                <p >{direction.originationName}</p>
               </div>
               <div className="Div_ArrowRight_Style">
                 <i className="fas fa-chevron-right"></i>
               </div>
               <div className="Div_DirectionSmallCard_Style">
-                {direction.destinationName}
+                <p className="P_Label_Style">END OF LINE</p>
+                <p>{direction.destinationName}</p>
               </div>
             </div>
           );
