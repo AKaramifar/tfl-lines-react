@@ -112,7 +112,7 @@
   height: 50px;
   display: flex;
   align-items: center;
-  background-color: #f7fbfe;
+  background-color: #FAFAFA;
   transition: 150ms;
 }
 .Div_Vehicle_Selected_Style {
@@ -175,7 +175,7 @@
 .Div_VehicleCard_Style {
   width: 95px;
   height: 95px;
-  background-color: #f7f7f7;
+  background-color: #ECEFF1;
   margin: 5px;
   border-radius: 3px;
   color: #2f3640;
@@ -214,7 +214,7 @@
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
-  background-color: #f7f7f7;
+  background-color: #f5f6fa;
   padding: 10px;
   margin: 20px;
   transition: 200ms;
@@ -246,7 +246,7 @@
   width: 48%;
   height: 100px;
   border-radius: 5px;
-  background-color: #113b92;
+  background-color: #1565C0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   color: whitesmoke;
