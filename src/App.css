@@ -221,6 +221,7 @@
 }
 .Div_DirectionCard_Style:hover{
   box-shadow: 0px 0px 0px 3px #113b92;
+  transform: scale(1.01);
 }
 @keyframes arrowRight {
   0% {
